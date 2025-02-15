@@ -59,36 +59,71 @@
         nav {
             height: 50px;
             width: 100%;    
-            background: black;
+            background: rgb(255, 255, 255);
             opacity: 0.9;
             box-shadow: 0px 5px 0px #dedede;
-            /* margin-top: -15px; */
         }
         nav ul {
+            position: absolute;
+            top: 38.5%;
+            left: 25%;
+            display: flex;
             list-style: none;
-            text-align: center;
         }
         nav ul li {
+            list-style: none;
             display: inline-block;
         }
         nav ul li a {
+            position: relative;
             display: block;
-            padding: 15px;
-            text-decoration: none;
-            color: #aaa;
-            font-weight: 800;
             text-transform: uppercase;
+            text-decoration: none;
+            color: #262626;
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            transition: .5s;
+            z-index: 1;
+            padding: 15px;
             margin: 0 10px;
         }               
-        /** MDN, class, P->V transition = ??? */
-        nav ul li a,
-        nav ul li a:after,
         nav ul li a:before {
-            transition: all.5s;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-top: 2px solid #262626;
+            border-bottom: 2px solid #262626;
+            transform: scaleY(2);
+            opacity: 0;
+            transition: .3s;
+        }
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #262626;
+            transform: scale(0);
+            opacity: 0;
+            transition: .3s;
+            z-index: -1;
         }
         nav ul li a:hover {
-            color: #555;
-            background-color: teal;
+            color: #fff;
+            &:before {
+                transform: scaleY(1);
+                opacity: 1;
+            }
+            &:after {
+            transform: scaleY(1);
+            opacity: 1;
+            }
         }
         
         /*TODO Footer Style */
