@@ -2,29 +2,117 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=., initial-scale=1.0">
-    <title>Indian Cuisine</title>
-    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIAN CUISINE</title>
     <style>
-        body{
-            /* height: 200vh; */
-            border: 1px solid ;
-            padding: 2%;
+        
+        /* TODO  Header Styles */
+        body {
+            height: 250vh;
+            margin-top: -200px;
+            font-family: "Lato", sans-serif;    
+            font-style: normal;  /*? Normal = 400px, Bold  = 700px */
+            margin: 0px;
+            padding: 0px;
+            background-image: linear-gradient(#FFA500, white, rgb(109, 204, 109));
+            /* background-image: linear-gradient(#FF9933, #FFFFFF, #77DD77); */
         }
-        header{
+        .Main {
+            text-transform: uppercase;
+            margin-top: 130px;
+        }
+        h2 {
+            text-indent: 5%;
+        }
+        .H {
             text-align: center;
-            border: 1px solid;
-            height: 5%;
-            background-image: url(./HeadImg.avif);
-            padding-top: 145px;
+            font-size:20px;
+            text-transform: uppercase;
         }
+        header {
+            text-decoration: underline;
+            height: 175px;
+            background-image: url(HeadImg.avif);
+            line-height: 3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: bolder;
+            letter-spacing: 2.5px;
+        }
+        h1, h2, h3 {
+            color: black;
+            font-size: 30px;
+        }
+        .H4 {
+            text-decoration: none;
+            color: black; 
+        }
+        p {
+            text-indent: 5%;
+        }
+        audio {
+            margin-left: 100px;
+        }
+
+        /*TODO  Navbar Styles */
+        nav {
+            height: 50px;
+            width: 100%;    
+            background: black;
+            opacity: 0.9;
+            box-shadow: 0px 5px 0px #dedede;
+            /* margin-top: -15px; */
+        }
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #aaa;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin: 0 10px;
+        }               
+            /** MDN, class, P->V transition = ??? */
+        nav ul li a,
+        nav ul li a:after,
+        nav ul li a:before {
+            transition: all.5s;
+        }
+        nav ul li a:hover {
+            color: #555;
+            background-color: teal;
+        }
+        
+        /*TODO Footer Style */
+        footer {
+            width: 100%;
+            text-align: center;
+            background-color: #343a40;
+            color: white;
+            padding: 15px;
+        }
+        footer a {
+            text-decoration: none;
+            color: red;
+        }
+        footer a:hover {
+            color: black;
+            background-color: yellow;
+        }
+
     </style>
 </head>
 <body>
-
-        <header class="Main"><h1>Wel Come To <mark>India Landmark</mark> ...</h1></header>
+    <header><h1 class="Main">WelCome To <mark>India Landmark</mark> ...</h1></header>
         <h4 class="H">Discover the Diversity, Beauty and Rich Heritage of India!</h4>
-    
     <nav>
         <ul>
             <li><a href="D:\WD Project\Index.html"><b>Home</b></a></li>
@@ -46,7 +134,7 @@
     <h2> North Indian Cuisine :- </h2>
     <p>North India is Known for its rich. aromatic, and flovorful dishes often cooked with ghee and spices.</p>
     <ul>
-        <li><b>Biryani:</b> A fragrant rice dish made with aromatic spices andment or vegetables.</li>
+        <li><b><mark>Biryani: </mark></b> A fragrant rice dish made with aromatic spices andment or vegetables.</li>
         <li><b>Butter Chicken:</b> A creamy. tomato-based curry that's a favorite worldwide.</li>
         <li><b>Paneer Tikka:</b> Marinated paneer cubes grilled to perfection.</li>
     </ul>
@@ -58,7 +146,7 @@
     <h2>South Indian Cuisine :- </h2>
     <p>South Indian offers a wide array if dishes with a prefect blend of spices and tangy flavors:</p>
     <ul>
-        <li><b>Masala Dosa:</b> A crispy rice stuffed with spicy potato filling.</li>
+        <li><b><mark>Masala Dosa:</mark></b> A crispy rice stuffed with spicy potato filling.</li>
         <li><b>Idli and Sambhar:</b> Soft rice cakes served with a tangy lentil-based vegetable stew.</li>
         <li><b>Chettinad Chicken:</b> A fiery, flavorful chicken dish from Tamil Nadu.</li>
     </ul>
@@ -70,7 +158,7 @@
     <h2>Sweet Delights :- </h2>
     <p>No Indian meal is complete without indulging in some mouth-watering desserts: </p>
     <ul>
-        <li><b>Gulab Jamun:</b> Fried milk solids soaked in sugar syrup.</li>
+        <li><b><mark>Gulab Jamun:</mark></b> Fried milk solids soaked in sugar syrup.</li>
         <li><b>Rasgulla:</b> Soft and spongy cheese balls in light sugar syrup.</li>
         <li><b>Payasam:</b> A South Indian dessert made of  milk, rice and jaggery.</li>
     </ul>

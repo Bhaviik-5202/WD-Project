@@ -3,25 +3,107 @@
 <head>
     <meta charset="UTF-8">                  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDIAN CULTUTE</title>
-    <link rel="stylesheet" href="Style.css">
+    <title>INDIAN INCREDIBLE</title>
     <style>
-       .Map {
-        margin-left: 50px;
-       }
-       h2 {
-        text-indent: 5%;
-       }
-       h1 {
-        margin-top: 25px;
-       }
 
+        /* TODO  Header Styles */
+        body {
+            height: 375vh;
+            font-family: "Lato", sans-serif;    
+            font-style: normal;  /*? Normal = 400px, Bold  = 700px */
+            margin: 0px;
+            padding: 0px;
+            background-image: linear-gradient(#FFA500, white, rgb(109, 204, 109));
+        /*  background-image: linear-gradient(#FF9933, #FFFFFF, #77DD77); */
+        }
+        .Main {
+            text-transform: uppercase;
+            margin-top: 130px;
+        }
+        h2 {
+            text-indent: 5%;
+        }
+        .H {
+            text-align: center;
+            font-size:20px;
+            text-transform: uppercase;
+        }
+        header {
+            text-decoration: underline;
+            height: 175px;
+            background-image: url(HeadImg.avif);
+            line-height: 3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: bolder;
+            letter-spacing: 2.5px;
+        }
+        h1, h2, h3 {
+            color: black;
+            font-size: 30px;
+        }
+        p {
+            text-indent: 5%;
+        }
 
-       
+        /*TODO  Navbar Styles */
+        nav {
+            height: 50px;
+            width: 100%;    
+            background: black;
+            opacity: 0.9;
+            box-shadow: 0px 5px 0px #dedede;
+         /* margin-top: -15px; */
+        }
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #aaa;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin: 0 10px;
+        }               
+        /** MDN, class, P->V transition = ??? */
+        nav ul li a,
+        nav ul li a:after,
+        nav ul li a:before {
+            transition: all.5s;
+        }
+        nav ul li a:hover {
+            color: #555;
+            background-color: teal;
+        }
+        
+        /*TODO Footer Style */
+        footer {
+            width: 100%;
+            text-align: center;
+            background-color: #343a40;
+            color: white;
+            padding: 15px;
+        }
+        footer a {
+            text-decoration: none;
+            color: red;
+        }
+        footer a:hover {
+            color: black;
+            background-color: yellow;
+        }
+
     </style>
 </head>
 
-        <header><b><h1 class="Main">Wel Come <mark> Incredible India</mark>...</h1></b></header>
+        <header><b><h1 class="Main">Welcome To <mark>Incredible India</mark>...</h1></b></header>
         <h4 class="H">Discover the Diversity, Beauty and Rich Heritage of India!</h4>
         
     <nav>
@@ -35,25 +117,20 @@
     </nav>
             <br>
             <h2>About  India :-</h2>
-            <p>India is a land of Incredible diversity. 
+            <p><b><mark>INDIA</mark></b> is a land of Incredible diversity. 
                 From the snow-capped peaks of the <i><b>Himalayas</b></i> to the serene backwaters of <b>Kerala,</b> 
                 every corner of India tells a unique story.
-                India is the <b>second-mosepopulous country</b> in the worls and boasts a history spanning thouands of years.
+                India is the <b>second-mosepopulous Country</b> in the worls and boasts a history spanning thouands of years.
                 Its rich traditions have left an indelible mark an the world, and its culture is a melting pot of various influences.
             </p>
-            <figure>
-                <span>
-                    <img
-                    src="India Map.jpg" 
-                    alt="Indian Map">
-                </span>  
+            <figure>    
+                <img src="India Map.jpg" alt="Indian Map">  
+                <figcaption><p style="margin-left: -70px;"><b>INDIA:</b> A land of Culture and geographical diversity</p></figcaption>
+                <figcaption><p style="margin-left: -70px;">"Unity in diversit is not justa slogan in India but a way of Life."</p></figcaption>
             </figure>
-                 
-            <figcaption><p style="margin-left: 50px;"><b>India:</b> A land of Culture and geographical diversity</p></figcaption>
-            <figcaption><p style="margin-left: 50px;">"Unity in diversit is not justa slogan in India but a way of Life."</p></figcaption>
             <p>Highlights of India Include:</p>
             <ul>
-                <li><b>Architecture: </b>Majestic monuments like the Taj Mahal and Red Fort.</li>
+                <li><b><mark>Architecture:  </mark></b>Majestic monuments like the Taj Mahal and Red Fort.</li>
                 <li><b>Cuisine: </b>Diverse flovors from spicy curries to sweet desserts.</li>
                 <li><b>Culture: </b>Vibrant festivals, classical dances, and colorful altire.</li>
             </ul>
@@ -61,7 +138,7 @@
             <br>
             <h2>Famous Landmarks :-</h2>
             <p>
-                India is home to <mark>29 UNESCo World Heritage Sites</mark>, marking it a paradise for history and architecture enthusiasts.
+                INDIA is home to <mark>29 UNESCo World Heritage Sites</mark>, marking it a paradise for history and architecture enthusiasts.
             </p>
             <ol>
                 <li>
@@ -83,9 +160,9 @@
             <h2>Indian Culture :-</h2>
             <p>India's <b>cultural heritage</b>  is a blend of various traditions, languages, and religious. Each region has its unique identity and traditions that are celebrated throgh festivals and daily life. Here are some highlights:</p>
             <ul>
-               <li><i>Classical Dances:</i> Bharatanatyam, Kathak and Odissi.</li>
-               <li><i>Music:</i> Traditional instruments like the sitar, tabla, and veena.</li>
-               <li><i>Festival:</i> Diwali, Holi, Eid, and Christmas bring people together in celebration.</li>
+               <li><b><mark>Classical Dances:</mark></b> Bharatanatyam, Kathak and Odissi.</li>
+               <li><b>Music:</b> Traditional instruments like the sitar, tabla, and veena.</li>
+               <li><b>Festival:</b> Diwali, Holi, Eid, and Christmas bring people together in celebration.</li>
            </ul>
            <figure>
                <img src="Dance.jpg" alt="Dance Image">
@@ -95,17 +172,24 @@
                <p>Indian food is as diverse as its culture. From the fiery curries of the south toothe hearty bread of the north, there's something for everyone. Popular dishes include:</p>
            </figure>
            <ul>
-               <li><b>North Indian:</b> Butter chicken, naan, and paneer tikka.</li>
+               <li><b><mark>North Indian:</mark></b> Butter chicken, naan, and paneer tikka.</li>
                <li><b>South Indian:</b> Dosa, idli, and sambhar. </li>
                <li><b>Street Food:</b> Pani puri, chaat, and vada pav.</li>
            </ul>
-           <figure>
-               <img src="Biryani.jpg" alt="Biryani Image">
-               <figcaption>Delicious Hyderabadi Biryani</figcaption>
-               <img src="Sweet Food.jpg" alt="Sweet Food Image">
-               <figcaption>Colorful and Flavorful Indian steer food</figcaption>
-           </figure>
-        
+           <ol>
+            <li>
+                <figure>
+                    <img src="Biryani.jpg" alt="Biryani Image">
+                    <figcaption>Delicious Hyderabadi Biryani</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="Sweet Food.jpg" alt="Sweet Food Image">
+                    <figcaption>Colorful and Flavorful Indian steer food</figcaption>
+                </figure> 
+            </li>
+           </ol>
            <br>
            <footer>
                <p> <em><i> Contact us at <a href="https://www.incredible-india.org/">info@incredibleindia.com</a> </i></em> </p>
