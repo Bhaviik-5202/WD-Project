@@ -27,6 +27,13 @@
         img {
             height: 250px;
             width: 320px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 5px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .Image:hover {
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
         }
         .Main {
             text-transform: uppercase;
@@ -165,7 +172,9 @@
             color: teal;
         }
         footer a:hover {
-            color: aqua;
+            /* color: black; */
+            /* background-color: #fed8a9; */
+            color: white;
             background-color: black;
         }
         /* FOOTER L */
@@ -190,6 +199,18 @@
             color: aqua;
             background-color: black;
         }
+
+        @media (max-width: 768px) {
+        .Main {
+            width: 95%;
+            flex-direction: column;
+        }
+        nav a {
+            display: block;
+            margin: 10px 0;
+        }
+        }
+
 
     </style>
 </head>
@@ -216,7 +237,7 @@
                 Its rich traditions have left an indelible mark an the world, and its culture is a melting pot of various influences.
             </p>
             <figure>    
-                <img src="India Map.jpg" alt="Indian Map">  
+                <img src="India Map.jpg" alt="Indian Map" class="Image">  
                 <figcaption><p style="margin-left: -70px;"><b>INDIA:</b> A land of Culture and geographical diversity</p></figcaption>
                 <figcaption><p style="margin-left: -70px;">"Unity in diversit is not justa slogan in India but a way of Life."</p></figcaption>
             </figure>
@@ -235,13 +256,13 @@
             <ol>
                 <li>
                     <figure>
-                        <img src="Taj Mahel.jpg" alt="Taj Mahel Image">
+                        <img src="Taj Mahel.jpg" alt="Taj Mahel Image" class="Image">
                         <figcaption>The Qutub Minar, a symbol of eteral Love</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
-                        <img src="Qutub Minar.jpg" alt="Qutub Minar Image">
+                        <img src="Qutub Minar.jpg" alt="Qutub Minar Image" class="Image">
                         <figcaption>The Qutub Minar, an architectural marvel Delhi</figcaption>
                     </figure>
                 </li>
@@ -257,7 +278,7 @@
                <li><b>Festival:</b> Diwali, Holi, Eid, and Christmas bring people together in celebration.</li>
            </ul>
            <figure>
-               <img src="Dance.jpg" alt="Dance Image">
+               <img src="Dance.jpg" alt="Dance Image" class="Image">
                <figcaption>A Glimpse of Indian Classical Dance</figcaption>
                 <br>
                <h2>Delicious Indian Cuisine :-</h2>
@@ -271,13 +292,13 @@
            <ol>
             <li>
                 <figure>
-                    <img src="Biryani.jpg" alt="Biryani Image">
+                    <img src="Biryani.jpg" alt="Biryani Image" class="Image">
                     <figcaption>Delicious Hyderabadi Biryani</figcaption>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="Sweet Food.jpg" alt="Sweet Food Image">
+                    <img src="Sweet Food.jpg" alt="Sweet Food Image" class="Image">
                     <figcaption>Colorful and Flavorful Indian steer food</figcaption>
                 </figure> 
             </li>
@@ -285,7 +306,7 @@
            <br>
            <footer>
                <p><em><i> Contact us at <a href="https://www.incredible-india.org/" target="_blank">info@incredibleindia.com</a> </i></em></p>
-               <p>&copy; 2025 Incredible India Project. All right reserved.</p>
+               <p>Copyright &copy; 2025 Incredible India Project. All right reserved.</p>
                <p>Follow us on: | <a href="" target="_blank">Facebook</a> | <a href="" target="_blank">Twitter</a> | <a href="" target="_blank">Instagram</a> |</p>
                <div class="FooterL">
                 <ul class="FooterLinks">

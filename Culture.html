@@ -25,8 +25,14 @@
         }
         img {
             height: 250px;
-            width: 320px;
-        }    
+            width: 320px;border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 5px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .Image:hover {
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        }
         .Main {
             text-transform: uppercase;
             margin-top: 140px;
@@ -167,7 +173,9 @@
             color: teal;
         }
         footer a:hover {
-            color: aqua;
+            /* color: black;
+            background-color: #fed8a9; */
+            color: white;
             background-color: black;
         }
         /* FOOTER L */
@@ -223,7 +231,7 @@
     </ul>
 
     <figure>
-        <img src="Diwali.jpg" alt="Diwali Image">
+        <img src="Diwali.jpg" alt="Diwali Image" class="Image">
         <figcaption>Diwali - The Festival Of Lights</figcaption>
     </figure>
 
@@ -268,14 +276,14 @@
         <li><b>Dhoti: </b>Traditional men's wear in southern and eastern India.</li>
     </ul>
     <figure>
-        <img src="Saree.jpg" alt="Saree Image">
+        <img src="Saree.jpg" alt="Saree Image" class="Image">
         <figcaption>Traditional Saree - Grace and Elegance</figcaption>
     </figure>
 
     <footer>
         <a href="D:\WD Project\Index.html">&#8592; Back To Home</a>
-        <p><em>Contact us at <a href="https://www.incredible-india.org/"><i>info@incredibleindia.com</a></i></em></p>
-        <p>&copy; 2025 Incredible India Project. All right reserved.</p>
+        <p><em>Contact us at <a href="https://www.incredible-india.org/" target="_blank"><i>info@incredibleindia.com</a></i></em></p>
+        <p>Copyright &copy; 2025 Incredible India Project. All right reserved.</p>
         <p>Follow us on: | <a href="" target="_blank">Facebook</a> | <a href="" target="_blank">Twitter</a> | <a href="" target="_blank">Instagram</a> |</p>
         <div class="FooterL">
             <ul class="FooterLinks">

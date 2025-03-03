@@ -25,6 +25,13 @@
         img {
             height: 250px;
             width: 320px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 5px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .Image:hover {
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
         }
         .Main {
             text-transform: uppercase;
@@ -162,7 +169,9 @@
             color: teal;
         }
         footer a:hover {
-            color: aqua;
+            /* color: black;
+            background-color: #fed8a9; */
+            color: white;
             background-color: black;
         }
         /* FOOTER L */
@@ -219,7 +228,7 @@
     </ul>
 
     <figure>
-        <img src="RedFort.jpg" alt="RedFort Image">
+        <img src="RedFort.jpg" alt="RedFort Image" class="Image">
         <figcaption>The Majestic Red Fort in Delhi</figcaption>
     </figure>
 
@@ -272,7 +281,7 @@
     <h2>Fun Fact :-</h2>
     <p>Did you know ? India has the largest postal network in the world, with over <b>1,50,000</b> post offices, including one located on a floatong structure in Dal Lake, Srinagar.</p>
     <figure>
-        <img src="Lake.jpg" alt="Lake Image">
+        <img src="Lake.jpg" alt="Lake Image" class="Image">
         <figcaption>The floating post office in Dal lake, Srinagar</figcaption>
     </figure>
 
@@ -280,8 +289,8 @@
     <br>
     <footer>
         <a href="D:\WD Project\Index.html"> &#8592; Back To Home</a>
-        <p><em> <i>Contact us at <a href="https://www.incredible-india.org/">info@incredibleindia.com</a> </i></em></i></p>
-        <p>&copy; compny 2025 Incredible India Project. All right reserved.</p>
+        <p><em> <i>Contact us at <a href="https://www.incredible-india.org/" target="_blank">info@incredibleindia.com</a> </i></em></i></p>
+        <p>Copyright &copy; compny 2025 Incredible India Project. All right reserved.</p>
         <p>Follow us on: | <a href="" target="_blank">Facebook</a> | <a href="" target="_blank">Twitter</a> | <a href="" target="_blank">Instagram</a> |</p>
         <div class="FooterL">
             <ul class="FooterLinks">
