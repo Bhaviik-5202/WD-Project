@@ -196,6 +196,42 @@
             color: aqua;
             background-color: black;
         }
+    
+        @media  screen and (max-width: 600px) {
+            body {
+                width: 200%;
+                margin: 0;
+                padding: 0px 10px 0px 25px;
+            }
+            header {
+                background-image: url(HeadImg\ -\ Media.jpg);
+            }
+            .Position {
+                text-align: center;
+            }
+            nav {
+                height: 50px;
+                width: 200%;
+            }
+            nav ul li a {
+                padding: 0px;
+                font-size: 20px;
+                line-height: 2;
+            }
+            .Image {
+                height: 250px;
+                width: 350px;
+            }
+            .Caption {
+                text-align: center;
+            }
+            h2 {
+                text-align: center;
+            }
+            .FooterL li {
+                margin-left: 50px;
+            }
+        }
 
     </style>
 </head>
@@ -227,7 +263,7 @@
         <li><b>Charminar:</b> An iconic mosque in Hyderabad and a masterpiece of Indo-Islamic architecture.</li>
     </ul>
 
-    <figure>
+    <figure class="Caption">
         <img src="RedFort.jpg" alt="RedFort Image" class="Image">
         <figcaption>The Majestic Red Fort in Delhi</figcaption>
     </figure>
@@ -280,7 +316,7 @@
     <br>
     <h2>Fun Fact :-</h2>
     <p>Did you know ? India has the largest postal network in the world, with over <b>1,50,000</b> post offices, including one located on a floatong structure in Dal Lake, Srinagar.</p>
-    <figure>
+    <figure class="Caption">
         <img src="Lake.jpg" alt="Lake Image" class="Image">
         <figcaption>The floating post office in Dal lake, Srinagar</figcaption>
     </figure>

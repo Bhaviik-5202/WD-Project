@@ -200,17 +200,46 @@
             background-color: black;
         }
 
-        @media (max-width: 768px) {
-        .Main {
-            width: 95%;
-            flex-direction: column;
+        @media  screen and (max-width: 600px) {
+            body {
+                width: 200%;
+                margin: 0;
+                padding: 0px 10px 0px 25px;
+            }
+            header {
+                background-image: url(HeadImg\ -\ Media.jpg);
+            }
+            .Position {
+                text-align: center;
+            }
+            nav {
+                height: 50px;
+                width: 200%;
+            }
+            nav ul li a {
+                padding: 0px;
+                font-size: 20px;
+                line-height: 2;
+            }
+            .Image {
+                height: 250px;
+                width: 350px;
+            }
+            .Caption {
+                text-align: center;
+            }
+            h2 {
+                text-align: center;
+            }
+            .FooterL li {
+                margin-left: 50px;
+            }
         }
-        nav a {
-            display: block;
-            margin: 10px 0;
-        }
-        }
-
+        /* @media  screen and (max-width: 320px) {
+                nav ul li {
+                    flex-direction: column;
+                }
+            } */
 
     </style>
 </head>
@@ -229,17 +258,17 @@
             </ul>
         </nav>
         <br>
-            <h2>About  India :-</h2>
+            <h2>About  India :&#8608;</h2>
             <p><b><mark>INDIA</mark></b> is a land of Incredible diversity. 
                 From the snow-capped peaks of the <i><b>Himalayas</b></i> to the serene backwaters of <b>Kerala,</b> 
                 every corner of India tells a unique story.
                 India is the <b>second-mosepopulous Country</b> in the worls and boasts a history spanning thouands of years.
                 Its rich traditions have left an indelible mark an the world, and its culture is a melting pot of various influences.
             </p>
-            <figure>    
+            <figure class="Caption">    
                 <img src="India Map.jpg" alt="Indian Map" class="Image">  
-                <figcaption><p style="margin-left: -70px;"><b>INDIA:</b> A land of Culture and geographical diversity</p></figcaption>
-                <figcaption><p style="margin-left: -70px;">"Unity in diversit is not justa slogan in India but a way of Life."</p></figcaption>
+                <figcaption><p><b>INDIA:</b> A land of Culture and geographical diversity</p></figcaption>
+                <figcaption><p>"Unity in diversit is not justa slogan in India but a way of Life."</p></figcaption>
             </figure>
             <p>Highlights of India Include:</p>
             <ul>
@@ -249,39 +278,39 @@
             </ul>
 
             <br>
-            <h2>Famous Landmarks :-</h2>
+            <h2>Famous Landmarks :&#8608;</h2>
             <p>
                 INDIA is home to <mark>29 UNESCO World Heritage Sites</mark>, marking it a paradise for history and architecture enthusiasts.
             </p>
             <ol>
-                <li>
+                <li class="Caption">
                     <figure>
                         <img src="Taj Mahel.jpg" alt="Taj Mahel Image" class="Image">
-                        <figcaption>The Qutub Minar, a symbol of eteral Love</figcaption>
+                        <figcaption>1. The Qutub Minar, a symbol of eteral Love</figcaption>
                     </figure>
                 </li>
                 <li>
-                    <figure>
+                    <figure class="Caption">
                         <img src="Qutub Minar.jpg" alt="Qutub Minar Image" class="Image">
-                        <figcaption>The Qutub Minar, an architectural marvel Delhi</figcaption>
+                        <figcaption>2. The Qutub Minar, an architectural marvel Delhi</figcaption>
                     </figure>
                 </li>
             </ol>
          <p><i>Don't miss exploring the intricate carvings, towering minarets, and breathtaking landscapes!. </i></p>
     
             <br>
-            <h2>Indian Culture :-</h2>
+            <h2>Indian Culture :&#8608;</h2>
             <p>India's <b>cultural heritage</b>  is a blend of various traditions, languages, and religious. Each region has its unique identity and traditions that are celebrated throgh festivals and daily life. Here are some highlights:</p>
             <ul>
                <li><b><mark>Classical Dances:</mark></b> Bharatanatyam, Kathak and Odissi.</li>
                <li><b>Music:</b> Traditional instruments like the sitar, tabla, and veena.</li>
                <li><b>Festival:</b> Diwali, Holi, Eid, and Christmas bring people together in celebration.</li>
            </ul>
-           <figure>
+           <figure class="Caption">
                <img src="Dance.jpg" alt="Dance Image" class="Image">
                <figcaption>A Glimpse of Indian Classical Dance</figcaption>
                 <br>
-               <h2>Delicious Indian Cuisine :-</h2>
+               <h2>Delicious Indian Cuisine :&#8608;</h2>
                <p>Indian food is as diverse as its culture. From the fiery curries of the south toothe hearty bread of the north, there's something for everyone. Popular dishes include:</p>
            </figure>
            <ul>
@@ -291,13 +320,13 @@
            </ul>
            <ol>
             <li>
-                <figure>
+                <figure class="Caption">
                     <img src="Biryani.jpg" alt="Biryani Image" class="Image">
                     <figcaption>Delicious Hyderabadi Biryani</figcaption>
                 </figure>
             </li>
             <li>
-                <figure>
+                <figure class="Caption">
                     <img src="Sweet Food.jpg" alt="Sweet Food Image" class="Image">
                     <figcaption>Colorful and Flavorful Indian steer food</figcaption>
                 </figure> 

@@ -60,10 +60,26 @@
             color: black;
         }
         form {
+            /* background: white; */
             background-color: white;
+            height: 1000px;
             color: black;
-            opacity: 0.;
-            font-size: 20px;
+            font-size: 25px;
+            padding: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 75px;  
+        }
+        .container {
+            /* background-color: rgba(0, 128, 128, 0.8); */
+            /* background-color: #fed8a9; */
+            /* background-color: white; */
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            max-width: 90%;
+            height: 950px;
+            margin: auto;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         textarea {
             resize: none;
@@ -200,6 +216,116 @@
             background-color: black;
         }
 
+
+        /* Flex, Grid, Animations ADD... */
+        form .Form {
+            display: grid;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+            height: 800px;
+        }
+        fieldset {
+            text-align: center;
+        }
+        .Group {
+            display: flex;
+            grid-template-rows: 30px;
+            /* flex-direction: column; */
+        }
+        label {
+            font-weight: 400;
+            width: 50%;
+        }
+        input, select, textarea {
+            padding: 10px;
+            width: 70%;
+            height: 20px;
+            border-radius: 5px;
+            font-size: 20px;
+            /* outline: none; */
+            /* border: 2px solid #ccc; */
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #fda085;
+        }
+        textarea {
+            resize: none;
+        }
+        .Gender, .Subscibe {
+            display: flex;
+            gap: 15px;           
+        }
+        .Sub {
+            /* Not RUN */
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        button {
+            /* background: #ff9800; */
+            background-color: teal; 
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 95%;
+            font-size: 18px;
+            justify-content: space-between;
+        }
+        button:hover {
+            background: #e68900;
+            transform: scale(1.05);
+        }
+
+        @media  screen and (max-width: 600px) {
+            body {
+                width: 200%;
+                margin: 0;
+                padding: 0px 10px 0px 25px;
+            }
+            header {
+                background-image: url(HeadImg\ -\ Media.jpg);
+            }
+            .Position {
+                text-align: center;
+            }
+            nav {
+                height: 50px;
+                width: 200%;
+            }
+            nav ul li a {
+                padding: 0px;
+                font-size: 20px;
+                line-height: 2;
+            }
+            .Image {
+                height: 250px;
+                width: 350px;
+            }
+            .Caption {
+                text-align: center;
+            }
+            h2 {
+                text-align: center;
+            }
+            .FooterL li {
+                margin-left: 50px;
+            }
+            form .Form {
+                flex-direction: column;
+            }
+            .Group {
+                grid-template-columns: 1fr;
+            }
+            button {
+                 width: 100%;
+            }
+        }
+        
     </style>
 </head>
 <body>
@@ -220,59 +346,89 @@
     <h2>Contact Us:</h2>
     <p>Please, Fill out the form below for any inquiries or to register as a student.</p>
 
-       <form action="/action.php" method="">
+    <form action="/action.php" method="">
+    <div class="container">    
         <fieldset>
             <legend><h4>Student Register Form:</h4></legend>
+        <div class="Form">
 
-            <label for="First Name">First Name:</label>
-            <input type="text" id="First Name" name="First Name" placeholder="Enter Your First Name"><br><br>
-            
-            <label for="Password">Password</label>
-            <input type="password" id="Password" name="Password" placeholder="Enter Password"><br><br>
+            <div class="Group">
+                <label for="First Name">First Name:</label>
+                <input type="text" id="First Name" name="First Name" placeholder="Enter Your First Name"><br><br>
+            </div>
 
+            <div class="Group">
+                <label for="Password">Password: </label>
+                <input type="password" id="Password" name="Password" placeholder="Enter Password"><br><br>
+            </div>
 
-            <label for="Gender">Gender:</label>
-            <input type="radio" id="Male" name="a" value="Male" />
-            <label for="Male">Male</label>
-            <input type="radio" id="FeMale" name="a" value="FeMale" /> 
-            <label for="FeMale">FeMale</label>
-            <br><br>
+            <div class="Group Gender">
+                <label for="Gender">Gender:</label>
+                <div class="Group">
+                    <input type="radio" id="Male" name="a" value="Male" />
+                    <label for="Male">Male</label>
+                </div>
+                <div class="Group">
+                    <input type="radio" id="FeMale" name="a" value="FeMale" /> 
+                    <label for="FeMale">FeMale</label>
+                </div>  
+            </div>
 
-            <label for="checkbox">Subscibe to Newsletter:</label>
-            <input type="checkbox" id="checkbox" name="checkbox"><br><br>
-        
-            <label for="">State:</label>
-            <select 
-            id="State" 
-            name="State">
-                <option value="Select Source">Select Source</option>
-                <option value="Gujarat">Gujarat</option>
-                <option value="Rajasthan">Rajasthan</option>
-                <option value="Panjab">Panjab</option>
-                <option value="Tamil Nadu">Tamil Nadu</option>
-                <option value="Kashmir">Kashmir</option>
-            </select><br><br>
-            
-            <label for="File">Upload Resume:</label>
-            <input type="file" id="File"><br><br>
+            <div class="Group Subscibe">
+                <label for="checkbox" class="Sub">Subscibe to Newsletter:</label>
+                <input type="checkbox" id="checkbox" name="checkbox"><br><br>
+            </div>
 
-            <label for="Address">Address:</label>
-            <textarea name="Address" id="Address" placeholder="Enter Your Full Address" rows="5" cols=25"></textarea><br><br> 
-          
-            <label for="Birth">Date Of Birth:</label>
-            <input type="date" id="Birth" ><br><br>
+            <div class="Group">
+                <label for="">State:</label>
+                <select 
+                id="State" 
+                name="State">
+                    <option value="Select Source">Select Source</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Panjab">Panjab</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Kashmir">Kashmir</option>
+                </select><br><br>
+            </div>
 
-            <label for="Time">Preferred Interview Time:</label>
-            <input type="time" id="Time"><br><br>
+            <div class="Group">
+                <label for="File">Upload Resume:</label>
+                <input type="file" id="File"><br><br>
+            </div>
 
-            <label for="Marks">Marks:</label>
-            <input type="number" id="Marks"><br><br>
+            <div class="Group">
+                <label for="Address">Address:</label>
+                <textarea name="Address" id="Address" placeholder="Enter Your Full Address" rows="5" cols="25"></textarea><br><br> 
+            </div>
 
-            <button type="submit" class="btn">Submit</button>
-            <button class="btn" type="reset">Reset</button>
+            <div class="Group">
+                <label for="Birth">Date Of Birth:</label>
+                <input type="date" id="Birth" ><br><br>
+            </div>
 
+            <div class="Group">
+                <label for="Time">Preferred Interview Time:</label>
+                <input type="time" id="Time"><br><br>
+            </div>
+
+            <div class="Group">
+                <label for="Marks">Marks:</label>
+                <input type="number" id="Marks"><br><br>
+            </div>
+
+            <div class="Group">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+            <div class="Group">
+                <button class="btn" type="reset">Reset</button>
+            </div>
+
+        </div>
         </fieldset>
-       </form>
+    </div>
+    </form>
         
     <h2>More Information:</h2>
        <p>Explore Goverment Job Opportunities on the official OJAS Website:</p>
@@ -308,3 +464,4 @@
        </footer>
 </body>
 </html>
+
