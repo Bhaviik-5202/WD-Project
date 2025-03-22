@@ -11,6 +11,42 @@ body {
   background-color: #fed8a9;
   /* background-image: linear-gradient(#fed8a9, #fed8a9, #fed8a9); */
 }
+
+.about-india {
+    color: black;
+    font-size: 20px;
+}
+.bg-video {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.Taj {
+  color: black;
+  font-size: 20px;
+}
+.Taj {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    color: black;
+    font-size: 20px;
+}
+.Taj::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 760px;
+  background: url("Lankmarks_BG.webp") center/cover no-repeat;
+  opacity: 0.4;
+  z-index: -1;
+}
+
 .Image {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -165,20 +201,18 @@ nav ul li a:hover {
 nav ul li a:hover::after {
   width: 100%;
 }
+.Main {
+  animation: IND 1.5s ease-in-out;
+}
 @keyframes IND {
   from {
     opacity: 0;
-    /* transform: translateX(-100%); */
     transform: translateY(-100px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
-.Main {
-  animation: IND 1.5s ease-in-out;
-  transform: translateX(-100%);
 }
 
 /* Footer Style */
