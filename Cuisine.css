@@ -29,6 +29,7 @@ body {
   opacity: 0.2;
   z-index: -1;
 }
+
 img {
   height: 250px;
   width: 320px;
@@ -89,6 +90,7 @@ audio {
   position: sticky;
   top: 0;
   width: 97.5%;
+  z-index: 2;
 }
 .Position {
   font-size: 24px;
