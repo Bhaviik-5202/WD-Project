@@ -13,37 +13,68 @@ body {
 }
 
 .about-india {
-    color: black;
-    font-size: 20px;
+  color: black;
+  font-size: 20px;
 }
 .bg-video {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 110%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.5;
 }
 
 .Taj {
   color: black;
   font-size: 20px;
-}
-.Taj {
-    position: relative;
-    width: 100%;
-    height: 700px;
-    color: black;
-    font-size: 20px;
+  width: 100%;
+  height: 700px;
 }
 .Taj::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 760px;
+  height: 780px;
   background: url("Lankmarks_BG.webp") center/cover no-repeat;
   opacity: 0.4;
+  z-index: -1;
+}
+
+.Culture {
+  position: relative;
+  color: black;
+  font-size: 20px;
+  width: 100%;
+  height: auto;
+}
+.Culture::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 600px;
+  background: url("Culture_BG_Img-100.jpg") center/cover no-repeat;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.Cuisine {
+  position: relative;
+  color: black;
+  font-size: 20px;
+  width: 100%;
+  height: auto;
+}
+.Cuisine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 900px;
+  background: url("Cuisine_BG_10.webp") center/cover no-repeat;
+  opacity: 0.5;
   z-index: -1;
 }
 
@@ -73,6 +104,7 @@ h2 {
   text-indent: 5%;
   color: black;
   font-size: 20px;
+  background-color: white;
 }
 .H {
   text-align: center;
@@ -104,6 +136,7 @@ p {
   position: sticky;
   top: 0;
   width: 97.5%;
+  z-index: 1;
 }
 .Position {
   font-size: 24px;
@@ -234,6 +267,7 @@ footer a:hover {
   color: white;
   background-color: black;
 }
+
 /* FOOTER L */
 .FooterL {
   height: 30px;

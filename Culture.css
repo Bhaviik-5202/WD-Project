@@ -10,6 +10,25 @@ body {
   padding: 0px 25px 0px 25px;
   background-color: #fed8a9;
 }
+
+#Culture {
+  position: relative;
+  color: black;
+  font-size: 20px;
+  padding: 50px;
+}
+
+#Culture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("Culture-BG.jpg") center/cover no-repeat;
+  opacity: 0.4;
+  z-index: -1;
+}
 .Image {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -70,6 +89,7 @@ table {
   position: sticky;
   top: 0;
   width: 97.5%;
+  z-index: 2;
 }
 .Position {
   font-size: 24px;
@@ -168,8 +188,8 @@ nav ul li a:hover::after {
   width: 100%;
 }
 .Main {
-    animation: IND 1.5s ease-in-out;
-  }
+  animation: IND 1.5s ease-in-out;
+}
 @keyframes IND {
   from {
     opacity: 0;
@@ -195,7 +215,7 @@ footer a {
 }
 footer a:hover {
   /* color: black;
-    background-color: #fed8a9; */
+      background-color: #fed8a9; */
   color: white;
   background-color: black;
 }

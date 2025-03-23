@@ -184,8 +184,8 @@ nav ul li a:hover::after {
   width: 100%;
 }
 .Main {
-    animation: IND 1.5s ease-in-out;
-  }
+  animation: IND 1.5s ease-in-out;
+}
 @keyframes IND {
   from {
     opacity: 0;
